@@ -19,9 +19,9 @@ After download change permissions (if you already have it skip it)
 `git clone https://github.com/runticm/tq-work.git`  
 `cd tq-work/`  
 In AWS account run this CloudFormation template <ecs-cluster.template>, set name to EcsClusterStack and select key name. All other settings leave default  
-when its done add another CloudFormation template <ecs-jenkins-demo.template>, set name to JenkinsStack and leave all other setting as default  
-when its done create ECR repository (private) and name it hallo-world  
-in EC2 console look fo ssh to Jenkins instance and take public ip  
+When its done add another CloudFormation template <ecs-jenkins-demo.template>, set name to JenkinsStack and leave all other setting as default  
+When its done create ECR repository (private) and name it hallo-world  
+In EC2 console look fo ssh to Jenkins instance and take public ip  
 `ssh -i <key> ec2-user@<ip_of_jenkins>`  
 `sudo yum update –y`  
 `sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo`  
@@ -33,7 +33,7 @@ in EC2 console look fo ssh to Jenkins instance and take public ip
 `sudo usermod -aG docker $USER`  
 `sudo chmod 777 /var/run/docker.sock`  
 Go to your favorite browser and paste public hostname of Jenkins server  
-paste password which you coppy from previous step  
+Paste password which you coppy from previous step  
 Choose Install suggested plugins  
 Create your first admin user  
 Go to tab Manage jenkins and then Manage Plugins  
@@ -51,7 +51,7 @@ If prompted, confirm your GitHub password
 ## CREATE A GITHUB REPOSITORY (if you already have it skip it)
 Create a repository  
 On your PC do next  
-go into tq-work folder  
+Go into tq-work folder  
 Delete the hidden .git directory with command 
 `<rm -fR .git>`  
 Reinitialize the repository and push the contents to your new GitHub repository using SSH by running the following command  
@@ -62,14 +62,14 @@ If you are using SSH, run the following command:
 `<git remote add origin 'git@github.com:<your_repo>.git'>`  
 If you are using HTTPS, run the following command:  
 `<git remote add origin 'https://github.com/<your_repo>.git'>`  
-example: git remote add origin 'https://github.com/runticm/tq-work.git'  
+Example: git remote add origin 'https://github.com/runticm/tq-work.git'  
 `git push -u origin master`  
     
 ## ENABLE AUTOMATIC TRIGGER IN JENKINS BY ADDING WEBHOOK
 In GitHub repo, click settings (Not main setting! Repo settings)  
 Under settings, select Webhooks  
 Add Payload URL of your Jenkins public hostname and add sufix <github-webhook>  
-example: http://ec2-3-120-237-218.eu-central-1.compute.amazonaws.com/github-webhook/  
+Example: http://ec2-3-120-237-218.eu-central-1.compute.amazonaws.com/github-webhook/  
 Check pushes and pull requests under let me slect individual events to trigger this webhook  
 Check active box before click add webhook  
 Add webhook  
@@ -140,7 +140,7 @@ fi
 ```
 
 ## TEST everything
-on your PC do folowing  
+On your PC do folowing  
 `git add .`  
 `git commit -m "initial commit"`  
 `git push`  
