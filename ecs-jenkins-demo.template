@@ -102,7 +102,7 @@
             "Action": ["sts:AssumeRole"]
           }]
         },
-        "ManagedPolicyArns":["arn:aws:iam::aws:policy/AmazonEC2ContainerServiceFullAccess","arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"],
+        "ManagedPolicyArns":["arn:aws:iam::aws:policy/AmazonECS_FullAccess","arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"],
         "Path": "/",
         "Policies": [{
           "PolicyName": "JenkinsRolePolicy",
