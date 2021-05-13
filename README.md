@@ -5,10 +5,10 @@ hello-world
 
 Build and run using Docker Compose:
 
-	$ git clone https://github.com/runticm/tq-work.git
-	$ cd tq-work/
-	$ docker-compose up
-	$ localhost:80
+git clone https://github.com/runticm/tq-work.git
+cd tq-work/
+docker-compose up
+localhost:80
 
 
 ## Deploying to ECS
