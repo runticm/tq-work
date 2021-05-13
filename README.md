@@ -78,7 +78,8 @@ Build and run using Docker Compose:
 	$ Besides, delete workspace before build starts checked under build environment
 	$ Select execute shell under add a build step. In the command field, type or paste the following text: (ECR_REPO and REGION accordingly to your account)
 
-```#!/bin/bash
+```
+#!/bin/bash
 set -x
 sudo groupadd docker
 sudo usermod -aG docker $USER
@@ -88,7 +89,8 @@ REGION=eu-central-1
 ECR_REPO="008125993587.dkr.ecr.eu-central-1.amazonaws.com/hello-world"
 #$(aws ecr get-login --region ${REGION})
 aws ecr get-login --no-include-email --region ${REGION}>>login.sh
-sh login.sh```
+sh login.sh
+```
 
 	$ Select docker build and publish under add a build step
 	$ On Repository Name add: 008125993587.dkr.ecr.eu-central-1.amazonaws.com/hello-world (accordingly to your account)
@@ -96,7 +98,8 @@ sh login.sh```
     $ On Docker registry URL add: http://008125993587.dkr.ecr.eu-central-1.amazonaws.com/hello-world (accordingly to your account)
     $ Select execute shell under add a build step. In the command field, type or paste the following text: (REGION accordingly to your account)
 
-```#!/bin/bash
+```
+#!/bin/bash
 set -x
 #Constants
 PATH=$PATH:/usr/local/bin; export PATH
@@ -129,7 +132,8 @@ if [ "$SERVICES" == "" ]; then
 else
   echo "entered new service"
   aws ecs create-service --service-name ${SERVICE_NAME} --desired-count 1 --task-definition ${FAMILY} --cluster ${CLUSTER} --region ${REGION}
-fi```
+fi
+```
 
 	TEST
 	$ on your PC do folowing
