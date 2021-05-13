@@ -14,9 +14,7 @@ Build and run using Docker Compose:
 ## Deploying to ECS
 
 In AWS create key pair (if you already have it skip it)
-
 After download change permissions (if you already have it skip it)
-
 `chmod 400 <key_name>` (if you already have it skip it)
 
 	# git clone https://github.com/runticm/tq-work.git
