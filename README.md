@@ -28,7 +28,7 @@ In EC2 console look fo ssh to Jenkins instance and take public ip
 `sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key`  
 `sudo yum install jenkins -y`  
 `sudo service jenkins start`  
-`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`(and copy password) -PREPRAVI
+`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`(and copy password) -PREPRAVI  
 `sudo groupadd docker`  
 `sudo usermod -aG docker $USER`  
 `sudo chmod 777 /var/run/docker.sock`  
