@@ -34,13 +34,13 @@ Then select Download now and install after restart
 Select Restart Jenkins when installation is complete and no jobs are running  
 Refresh page after one min  
 	
-## SET GIT TO ACCEPT CHANGES (if you already have it skip it)
+## Set GIT accept changes (if you already have it skip it)
 In the top right corner of any page in GIT, choose your profile picture, then choose settings  
 In the user settings sidebar, choose SSH and GPG keys  
 Choose New SSH key and add Title and past pub key  
 If prompted, confirm your GitHub password  
 
-## CREATE A GITHUB REPOSITORY (if you already have it skip it)
+## Create a GIT repository (if you already have it skip it)
 Create a repository  
 On your PC do next  
 Go into tq-work folder  
@@ -57,7 +57,7 @@ If you are using HTTPS, run the following command:
 Example: git remote add origin 'https://github.com/runticm/tq-work.git'  
 `git push -u origin master`  
     
-## ENABLE AUTOMATIC TRIGGER IN JENKINS BY ADDING WEBHOOK
+## Enable automatic trigger in Jenkins by adding webhook
 In GitHub repo, click settings (Not main settings! It is Repo settings)  
 Under settings, select Webhooks  
 Add Payload URL of your Jenkins public hostname and add sufix github-webhook  
@@ -66,7 +66,7 @@ Check pushes and pull requests under let me slect individual events to trigger t
 Check active box before click add webhook  
 Add webhook  
 
-## CONFIGURE JENKINS JOB
+## Configure Jenkins job
 Create a freestyle project in Jenkins and add name  
 Under source code management, select git and type the name of your GitHub repository, https://github.com/your_repo.git (if it is public then this is done if not add Credentials)  
 Select Branch Specifier to */master  
@@ -131,7 +131,7 @@ else
 fi
 ```
 
-## TEST EVERYTHING
+## Test everything
 On your PC do folowing  
 `git add .`  
 `git commit -m "initial commit"`  
