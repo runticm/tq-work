@@ -15,7 +15,7 @@ Build and run using Docker Compose:
 
 In AWS create key pair (if you already have it skip it)  
 After download change permissions (if you already have it skip it)  
-`chmod 400 <key_name>` (if you already have it skip it)
+`chmod 400 <key_name>` (if you already have it skip it)  
 `git clone https://github.com/runticm/tq-work.git`  
 `cd tq-work/`  
 In AWS account run this CloudFormation template <ecs-cluster.template>, set name to EcsClusterStack and select key name. All other settings leave default  
