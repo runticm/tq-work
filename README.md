@@ -60,7 +60,7 @@ Example: git remote add origin 'https://github.com/runticm/tq-work.git'
 ## ENABLE AUTOMATIC TRIGGER IN JENKINS BY ADDING WEBHOOK
 In GitHub repo, click settings (Not main settings! It is Repo settings)  
 Under settings, select Webhooks  
-Add Payload URL of your Jenkins public hostname and add sufix <github-webhook>  
+Add Payload URL of your Jenkins public hostname and add sufix github-webhook  
 Example: http://ec2-3-120-237-218.eu-central-1.compute.amazonaws.com/github-webhook/  
 Check pushes and pull requests under let me slect individual events to trigger this webhook  
 Check active box before click add webhook  
@@ -68,7 +68,7 @@ Add webhook
 
 ## CONFIGURE JENKINS JOB
 Create a freestyle project in Jenkins and add name  
-Under source code management, select git and type the name of your GitHub repository, https://github.com/<repo>.git (if it is public then this is done if not add Credentials)  
+Under source code management, select git and type the name of your GitHub repository, https://github.com/your_repo.git (if it is public then this is done if not add Credentials)  
 Select Branch Specifier to */master  
 Under build triggers, select Github hook trigger for GITScm polling in order to connect with Github webhook (as soon as we push our script from local environment to Github, Jenkins will be triggered sponteneously)  
 Besides, delete workspace before build starts checked under build environment  
@@ -131,7 +131,7 @@ else
 fi
 ```
 
-## TEST everything
+## TEST EVERYTHING
 On your PC do folowing  
 `git add .`  
 `git commit -m "initial commit"`  
