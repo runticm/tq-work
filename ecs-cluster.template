@@ -111,7 +111,7 @@
     "EcsCluster" : {
       "Type" : "String",
       "Description" : "ECS Cluster Name",
-      "Default" : "getting-started"
+      "Default" : "typeqast-workshop"
     }
   },
   "Conditions": {
