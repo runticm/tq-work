@@ -107,7 +107,7 @@ Select execute shell under add a build step. In the command field, type or paste
 set -x
 #Constants
 PATH=$PATH:/usr/local/bin; export PATH
-REGION=us-east-1
+REGION=eu-central-1
 REPOSITORY_NAME=hello-world
 CLUSTER=getting-started
 FAMILY=`sed -n 's/.*"family": "\(.*\)",/\1/p' taskdef.json`
@@ -149,6 +149,6 @@ On AWS go to ECS
 Select Cluster getting-started  
 On Task bar select task  
 Expand under Containers hello-world  
-Take external link adress and here is our code which is builded from scratch  
-
+Take external link address and here is our deployment which is builded from scratch  
+On top of that we go POMJENI
 	:) Hello world (:
