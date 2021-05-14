@@ -11,7 +11,7 @@
 	}
 
 	#logo {
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 	}
 	</style>
 </head>
