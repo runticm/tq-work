@@ -142,5 +142,19 @@ Select Cluster getting-started
 On Task bar select task  
 Expand under Containers hello-world  
 Take external link address and here is our deployment which is builded from scratch  
-On top of that we go POMJENI
+On top of that we go to Auto Scaling Groups  
+Go to EcsClusterStack  
+On Load balancing go to edit  
+Choose Add a new load balancers  
+Type is Application Load Balancer and Internet-facing  
+Add a name on Loadbalancer (Name length must be between 1 - 32 characters)  
+On Listeners and routing > Default routing (forward to) choose Create a target group and pick proposed  
+Go to Load Balancers and search for ELB which you just created  
+Copy DNS name  
+Go to Route53, then hosted zones and pick your domain  
+There create a record  
+Record name can be test-deploy and Record type is CNAME  
+Paste into Value field ELB dns name which you copy from previus step and Create records  
+Go to your web page and see what we did  
+
 	:) Hello world (:
