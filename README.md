@@ -19,7 +19,8 @@ After download change permissions (if you already have it skip it)
 `git clone https://github.com/runticm/tq-work.git`  
 `cd tq-work/`  
 In AWS account run this CloudFormation template <ecs-cluster.template>, set name to EcsClusterStack and select key name. All other settings leave default  
-When its done add another CloudFormation template <ecs-jenkins-demo.template>, set name to JenkinsStack and leave all other setting as default  
+When its done add another CloudFormation template <ecs-jenkins-demo.template>, set name to JenkinsStack and leave all other setting on thet page as default  
+On second page you can set in Tag field: Key value is Name and Value field is Jenkins  
 When its done create ECR repository (private) and name it hello-world  
 In EC2 console look fo ssh to Jenkins instance and take public ip  
 `ssh -i <key> ec2-user@<ip_of_jenkins>`  

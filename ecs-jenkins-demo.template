@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
 
-  "Description": "AWS CloudFormation Sample Template Create a load balanced Jenkins CI server with Docker installed. The application is using CloudWatch logs **WARNING** This template creates an Amazon EC2 instance in an Autoscaling group. You will be billed for the AWS resources used if you create a stack from this template.",
+  "Description": "AWS CloudFormation Sample Template Create Jenkins CI server with Docker installed. This template creates an Amazon EC2 instance in an Autoscaling group.",
 
   "Parameters": {
     "InstanceType": {
@@ -88,7 +88,6 @@
         "RetentionInDays": 7
       }
     },
-
     "JenkinsRole": {
       "Type": "AWS::IAM::Role",
       "Properties": {
@@ -493,7 +492,6 @@
         }
       }
     },
-
     "InstanceSecurityGroup": {
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
