@@ -79,7 +79,7 @@ Select execute shell under add a build step. In the command field, type or paste
 set -x
 sudo groupadd docker
 sudo usermod -aG docker $USER
-chmod 777 /var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 PATH=$PATH:/usr/local/bin; export PATH
 REGION=eu-central-1
 ECR_REPO="008125993587.dkr.ecr.eu-central-1.amazonaws.com/hello-world"
@@ -138,7 +138,7 @@ On your PC do folowing
 `git push`  
 On Jenkins web page we see that job is triggered  
 On AWS go to ECS  
-Select Cluster getting-started  
+Select Cluster typeqast-workshop 
 On Task bar select task  
 Expand under Containers hello-world  
 Take external link address and here is our deployment which is builded from scratch  
