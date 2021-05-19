@@ -138,7 +138,7 @@ On your PC do folowing
 `git push`  
 On Jenkins web page we see that job is triggered  
 On AWS go to ECS  
-Select Cluster typeqast-workshop 
+Select Cluster typeqast-workshop  
 On Task bar select task  
 Expand under Containers hello-world  
 Take external link address and here is our deployment which is builded from scratch  
