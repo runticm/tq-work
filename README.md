@@ -62,7 +62,7 @@ In GitHub repo, click settings (Not main settings! It is Repo settings)
 Under settings, select Webhooks  
 Add Payload URL of your Jenkins public hostname and add sufix github-webhook  
 Example: http://ec2-3-120-237-218.eu-central-1.compute.amazonaws.com/github-webhook/  
-Check pushes and pull requests under let me slect individual events to trigger this webhook  
+Check pushes and pull requests under let me select individual events to trigger this webhook  
 Check active box before click add webhook  
 Add webhook  
 
